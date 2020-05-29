@@ -2,7 +2,7 @@
 
 Team Members:
 
-Mohammed Ruhaan Saiyad
-Ming Shane Tong
-Daneel Penman
+Mohammed Ruhaan Saiyad,
+Ming Shane Tong,
+Daneel Penman,
 Lucas Sarten
