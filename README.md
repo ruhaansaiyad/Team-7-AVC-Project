@@ -7,6 +7,8 @@ Ming Shane Tong,
 Daneel Penman,
 Lucas Sarten
 
+[Group Google Doc](https://docs.google.com/document/d/1E5nax8sHvRvkREA-iLWSAP3fB-MumnZg8RVfdBt5z-o/edit?usp=sharing)
+
  Task  | Start Date  | Action  | Due Date  | Complete
  ----- | ----------- | ------- | --------- | --
  Project Plan | 28/05  | <ul><li>Establish communication</li><li>Initial discussions for project direction</li><li>Assign roles</li><li>Assessment of team capabilities</li></ul> | 04/06  | <ul><li> [ ] </li></ul>
