@@ -1,12 +1,14 @@
 # Team-7-AVC-Project
 
-[Group Google Doc](https://docs.google.com/document/d/1E5nax8sHvRvkREA-iLWSAP3fB-MumnZg8RVfdBt5z-o/edit?usp=sharing)
+[Group Google Doc](https://docs.google.com/document/d/1E5nax8sHvRvkREA-iLWSAP3fB-MumnZg8RVfdBt5z-o/edit?usp=sharing)\
+[Project Kanban](https://github.com/ruhaansaiyad/Team-7-AVC-Project/projects/1)\
+[Milestones](https://github.com/ruhaansaiyad/Team-7-AVC-Project/milestones)
 
 ## Team Members:
 Mohammed Ruhaan Saiyad,\
 Ming Shane Tong,\
 Daneel Penman,\
-Lucas Sarten\
+Lucas Sarten
 
 ## Roles:
 <table>
