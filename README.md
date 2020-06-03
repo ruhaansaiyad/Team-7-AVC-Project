@@ -22,27 +22,22 @@ Github
         <tr>
             <th>Member</th>
             <th>Role</th>
-            <th>Responsibilities</th>
         </tr>
         <tr>
             <td>Ruhaan Saiyad</td>
             <td>Project Manager</td>
-            <td></td>
         </tr>
         <tr>
             <td>Ming Shane Tong</td>
             <td>Software Architect</td>
-            <td></td>
         </tr>
         <tr>
             <td>Daneel Penman</td>
             <td>Paperworker and coder</td>
-            <td></td>
         </tr>
         <tr>
             <td>Lucas Sarten</td>
             <td>Coding, testing, and debugging</td>
-            <td></td>
         </tr>
     </tbody>
 </table>
@@ -63,7 +58,6 @@ Github
                 <ul>
                     <li> [x] Establish communication</li>
                     <li> [x] Initial discussions for project direction</li>
-                    <li> [ ] Install SFML and make sure it works</li>
                     <li> [x] Assign roles</li>
                     <li> [x] Assessment of team capabilities </li>
                 </ul>
@@ -75,6 +69,7 @@ Github
             <td>04/06</td>
             <td>
                 <ul>
+                    <li> [ ] Install SFML and make sure it works</li>
                     <li> [ ] Determine feasibility of idea</li>
                     <li> [ ] Discuss structure of program</li>
                     <li> [ ] Set up framework</li>
