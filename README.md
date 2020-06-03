@@ -1,14 +1,45 @@
 # Team-7-AVC-Project
 
-Team Members:
-
-Mohammed Ruhaan Saiyad,
-Ming Shane Tong,
-Daneel Penman,
-Lucas Sarten
-
 [Group Google Doc](https://docs.google.com/document/d/1E5nax8sHvRvkREA-iLWSAP3fB-MumnZg8RVfdBt5z-o/edit?usp=sharing)
 
+## Team Members:
+Mohammed Ruhaan Saiyad,\
+Ming Shane Tong,\
+Daneel Penman,\
+Lucas Sarten\
+
+## Roles:
+<table>
+    <tbody>
+        <tr>
+            <th>Member</th>
+            <th>Role</th>
+            <th>Responsibilities</th>
+        </tr>
+        <tr>
+            <td>Ruhaan Saiyad</td>
+            <td>Project Manager</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Ming Shane Tong</td>
+            <td>Software Architect</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Daneel Penman</td>
+            <td>Paperworker and coder</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Lucas Sarten</td>
+            <td>Coding, testing, and debugging</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+## Timeline
 <table>
     <tbody>
         <tr>
