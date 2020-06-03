@@ -62,7 +62,7 @@ Github
             <td>
                 <ul>
                     <li> [x] Establish communication</li>
-                    <li> [ ] Initial discussions for project direction</li>
+                    <li> [x] Initial discussions for project direction</li>
                     <li> [ ] Install SFML and make sure it works</li>
                     <li> [x] Assign roles</li>
                     <li> [x] Assessment of team capabilities </li>
