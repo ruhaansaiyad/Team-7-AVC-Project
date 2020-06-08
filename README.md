@@ -73,7 +73,7 @@ Github
                     <li> [ ] Determine feasibility of idea</li>
                     <li> [ ] Discuss structure of program</li>
                     <li> [ ] Set up framework</li>
-                    <li> [ ] Begin working on core</li>
+                    <li> [x] Begin working on core</li>
                     <li> [ ] Complete Core</li>
                 </ul>
             </td>
