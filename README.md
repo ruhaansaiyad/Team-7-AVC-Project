@@ -85,10 +85,10 @@ Github
             <td>12/06</td>
             <td>
                 <ul>
-                    <li> [ ] Begin abstracting for completion</li>
-                    <li> [ ] Determine how the core code will be modified</li>
+                    <li> [x] Begin abstracting for completion</li>
+                    <li> [x] Determine how the core code will be modified</li>
                     <li> [ ] Allot tasks</li>
-                    <li> [ ] Begin work on completion</li>
+                    <li> [x] Begin work on completion</li>
                     <li> [ ] Test and debug completion</li>
                     <li> [ ] Complete completion</li>
                     <li> [ ] Do challenge if time allows</li>
