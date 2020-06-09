@@ -1,3 +1,5 @@
+#include <cmath>
+
 class Robot{
 	public:
 		Robot();
@@ -6,8 +8,7 @@ class Robot{
 		void motors(double vLeft, double vRight);
 	private:
 		int vMax;
-		int vCurve;
-		int curveThreshold; 	// min diff between LR velocity to be a curve
+		int vMin;
 		ImageProcessing imgProcess;
 		void move(int offset, int width);
 		int getOffset(int line, int width);
@@ -17,9 +18,8 @@ class Robot{
  * instantiate variables
  */
 Robot::Robot(){
-	vMax = 130;
-	vCurve = 80;
-	curveThreshold = 12;
+	vMax = 140;
+	vMin = 80;
 }
  
 /**
@@ -38,21 +38,20 @@ void Robot::stop(){
 
 /**
  * moves the left and right motors based on offset
+ * only when exit is straight
  */
 void Robot::move(int offset, int width){
 	double vLeft = (double)(width/2+offset)/width;
 	double vRight = (double)(width/2-offset)/width;
 	
-	// choose speed multiplier 
-	if(offset > curveThreshold){
-		// curve
-		vLeft *= vCurve;
-		vRight *= vCurve;
-	} else {
-		// straight
-		vLeft *= vMax;
-		vRight *= vMax;
-	}
+	// changes the speed based on displacement from center
+	int r = offset/(width/2); 
+	int v = (vMax - vMin) * cos(M_PI * r);
+	
+	vLeft *= v;
+	vLeft += vMin;
+	vRight *= v;
+	vRight += vMin;
 	
 	motors(vLeft, vRight);
 }
@@ -76,9 +75,32 @@ int Robot::start(){
     // loops forever and check path
     while(1){
 		takePicture(); 
-		int line = imgProcess.getLineIndex(cameraView);
-		int offset = getOffset(line, cameraView.width);
-		move(offset, cameraView.width);
+		// check for exits
+		int exit = imgProcess.getExit(cameraView);
+		
+		// goes left if possible
+		switch(exit){
+			case 0:
+				// left
+				motors(10, 10);
+				motors(-10, 32);
+				break;
+			case 1:
+				// straight
+				{
+				// check line
+				int line = imgProcess.getLineIndex(cameraView);
+				int offset = getOffset(line, cameraView.width);
+				move(offset, cameraView.width);
+				}
+				break;
+			default:
+				// turns rights
+				// searches for line clockwise
+				motors(10, 10);
+				motors(32, -10);
+				break;
+		}		
 	} 
 }
 
