@@ -74,6 +74,7 @@ Github
                     <li> [ ] Discuss structure of program</li>
                     <li> [x] Set up framework</li>
                     <li> [x] Begin working on core</li>
+                    <li> [ ] Test and debug core</li>
                     <li> [ ] Complete Core</li>
                 </ul>
             </td>
@@ -88,6 +89,7 @@ Github
                     <li> [ ] Determine how the core code will be modified</li>
                     <li> [ ] Allot tasks</li>
                     <li> [ ] Begin work on completion</li>
+                    <li> [ ] Test and debug completion</li>
                     <li> [ ] Complete completion</li>
                     <li> [ ] Do challenge if time allows</li>
                 </ul>
