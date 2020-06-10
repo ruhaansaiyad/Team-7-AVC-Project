@@ -25,11 +25,11 @@ Github
         </tr>
         <tr>
             <td>Ruhaan Saiyad</td>
-            <td>Project Manager</td>
+            <td>Project Manager(organising team meetings, reporting regularly on progress)</td>
         </tr>
         <tr>
             <td>Ming Shane Tong</td>
-            <td>Software Architect</td>
+            <td>Software Architect(writing core code and extending functionality)</td>
         </tr>
         <tr>
             <td>Daneel Penman</td>
@@ -48,12 +48,14 @@ Github
         <tr>
             <th>Milestone</th>
             <th>Start Date</th>
+            <th>Item Due</th>
             <th>Tasks</th>
             <th>Due Date</th>
         </tr>
         <tr>
             <td>Project Plan</td>
             <td>28/05</td>
+            <td>Plan</td>
             <td>
                 <ul>
                     <li> [x] Establish communication</li>
@@ -65,8 +67,9 @@ Github
             <td>04/06</td>
         </tr>
         <tr>
-            <td>Weekly Progress #1 (Core)</td>
+            <td>Weekly Progress #1</td>
             <td>04/06</td>
+            <td>Core</td>
             <td>
                 <ul>
                     <li> [ ] Install SFML and make sure it works</li>
@@ -83,6 +86,7 @@ Github
         <tr>
             <td>Weekly Progress #2 (Completion, Challenge)</td>
             <td>12/06</td>
+            <td>Completion / Challenge</td>
             <td>
                 <ul>
                     <li> [x] Begin abstracting for completion</li>
