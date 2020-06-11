@@ -111,7 +111,7 @@ Github
     </tbody>
 </table>
 
-## Running the Program
+## Install Guide
 
 ## Windows:
 - Download SFML version GCC 7.3.0 MinGW (SEH) - 64-bit found [here](https://www.sfml-dev.org/download/sfml/2.5.1/)  
@@ -119,6 +119,7 @@ Github
 - Download and install MinGW compiler version 7.3.0 (64-bit) found [here](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.3.0/threads-posix/seh/x86_64-7.3.0-release-posix-seh-rt_v5-rev0.7z/download)
 - Download and extract the repository files found [here](https://github.com/ruhaansaiyad/Team-7-AVC-Project/archive/master.zip)
 - Compile server3.cpp and robot.cpp using the included makefiles.
+- Copy the dll files from the SFML folder to the same folder as the exe
 - Run the compiled server3.exe file
 - Run the compiled robot.exe file
 ## Linux: 
