@@ -72,7 +72,7 @@ Github
             <td>Core</td>
             <td>
                 <ul>
-                    <li> [ ] Install SFML and make sure it works</li>
+                    <li> [x] Install SFML and make sure it works</li>
                     <li> [ ] Determine feasibility of idea</li>
                     <li> [ ] Discuss structure of program</li>
                     <li> [x] Set up framework</li>
