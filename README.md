@@ -78,6 +78,8 @@ Github
                     <li> [x] Set up framework</li>
                     <li> [x] Begin working on core</li>
                     <li> [x] Begin testing and debugging core</li>
+                    <li> [x] Review Feedback</li>
+                    <li> [x] Propose Changes</li>
                     <li> [ ] Complete Core</li>
                 </ul>
             </td>
