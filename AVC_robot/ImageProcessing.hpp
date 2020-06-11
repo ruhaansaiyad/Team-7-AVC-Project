@@ -25,7 +25,6 @@ int* ImageProcessing::getCenterRow(ImagePPM image){
  * returns a number for colour of the pixel
  * 0-not any of the following colours
  * 1-white
- * 2-black
  */
 int ImageProcessing::getColor(ImagePPM image, int row, int col){
 	if(isWhite(image, row, col)){
@@ -40,6 +39,6 @@ int ImageProcessing::getColor(ImagePPM image, int row, int col){
  */
 int ImageProcessing::isWhite(ImagePPM image, int row, int col){
 	// check white by looking at the luminocity
-	int lumin = get_pixel(image, row, col, 1);
+	int lumin = get_pixel(image, row, col, 3);
 	return (int)(lumin > 240);
 }
