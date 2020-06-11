@@ -1,40 +1,11 @@
 class ImageProcessing{
 	public:
-		int getLineIndex(ImagePPM image);
-		int containsBlack(ImagePPM image);
-	private:
 		int* getCenterRow(ImagePPM image);
+	private:
 		int getColor(ImagePPM image, int row, int col);
 		int isWhite(ImagePPM image, int row, int col);
-		int isRed(ImagePPM image, int row, int col);
-		int isBlack(ImagePPM image, int row, int col);
+		//int isRed(ImagePPM image, int row, int col);
 };
-
-/**
- * returns the center of the line
- */
-int ImageProcessing::getLineIndex(ImagePPM image){
-	int* row = getCenterRow(image);
-	// look at each row and check for 1s
-	int total = 0;		// stores the total of all index
-	int pixels = 0;		// stores white pixels
-	
-	// loops the row
-	for(int i = 0; i < image.width; i++){
-		if(row[i]){
-			// white pixel
-			total += i;
-			pixels++;
-		}
-	}
-	
-	// gets average index of the white pixels
-	if(pixels == 0){
-		return -1;
-	}
-	return (total/pixels);
-}
-
 
 /**
  * returns a summary of the center row
