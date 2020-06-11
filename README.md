@@ -86,7 +86,7 @@ Github
             <td>12/06</td>
         </tr>
         <tr>
-            <td>Weekly Progress #2 (Completion, Challenge)</td>
+            <td>Weekly Progress #2</td>
             <td>12/06</td>
             <td>Completion / Challenge</td>
             <td>
