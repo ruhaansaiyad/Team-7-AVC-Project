@@ -73,8 +73,8 @@ Github
             <td>
                 <ul>
                     <li> [x] Install SFML and make sure it works</li>
-                    <li> [ ] Determine feasibility of idea</li>
-                    <li> [ ] Discuss structure of program</li>
+                    <li> [x] Determine feasibility of idea</li>
+                    <li> [x] Discuss structure of program</li>
                     <li> [x] Set up framework</li>
                     <li> [x] Begin working on core</li>
                     <li> [x] Begin testing and debugging core</li>
