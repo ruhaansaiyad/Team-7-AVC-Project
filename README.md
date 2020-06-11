@@ -111,3 +111,28 @@ Github
     </tbody>
 </table>
 
+## Running the Program
+
+## Windows:
+- Download SFML version GCC 7.3.0 MinGW (SEH) - 64-bit found [here](https://www.sfml-dev.org/download/sfml/2.5.1/)  
+- Extract the files to C:/SFML
+- Download and install MinGW compiler version 7.3.0 (64-bit) found [here](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.3.0/threads-posix/seh/x86_64-7.3.0-release-posix-seh-rt_v5-rev0.7z/download)
+- Download and extract the repository files found [here](https://github.com/ruhaansaiyad/Team-7-AVC-Project/archive/master.zip)
+- Compile server3.cpp and robot.cpp using the included makefiles.
+- Run the compiled server3.exe file
+- Run the compiled robot.exe file
+## Linux: 
+- Download SFML version Linux GCC - 64-bit found [here](https://www.sfml-dev.org/download/sfml/2.5.1/)  
+- Extract the files
+- Download and extract the repository files found [here](https://github.com/ruhaansaiyad/Team-7-AVC-Project/archive/master.zip)
+- Compile server3.cpp and robot.cpp using the included makefiles.
+- Run the compiled server3 file
+- Run the compiled robot file
+## Mac: 
+- Install Homebrew by opening Terminal (Command+Space type Terminal) and typing the following:       
+```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"``` 
+- Install SFML by typing ```brew install sfml``` in Terminal 
+- Download and extract the repository files found [here](https://github.com/ruhaansaiyad/Team-7-AVC-Project/archive/master.zip)
+- Compile server3.cpp and robot.cpp using the included makefiles.
+- Run the compiled server3 file
+- Run the compiled robot file
