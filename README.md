@@ -25,11 +25,11 @@ Github
         </tr>
         <tr>
             <td>Ruhaan Saiyad</td>
-            <td>Project Manager(organising team meetings, reporting regularly on progress)</td>
+            <td>Project Manager (organising team meetings, reporting regularly on progress)</td>
         </tr>
         <tr>
             <td>Ming Shane Tong</td>
-            <td>Software Architect(writing core code and extending functionality)</td>
+            <td>Software Architect (writing core code and extending functionality)</td>
         </tr>
         <tr>
             <td>Daneel Penman</td>
