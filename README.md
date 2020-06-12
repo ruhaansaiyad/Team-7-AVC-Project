@@ -25,7 +25,7 @@ Github
         </tr>
         <tr>
             <td>Ruhaan Saiyad</td>
-            <td>Project Manager (organising team meetings, reporting regularly on progress)</td>
+            <td>Project Manager (organising team meetings, reporting regularly on progress) and coding</td>
         </tr>
         <tr>
             <td>Ming Shane Tong</td>
