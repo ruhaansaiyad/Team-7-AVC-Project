@@ -80,7 +80,7 @@ Github
                     <li> [x] Begin testing and debugging core</li>
                     <li> [x] Review Feedback</li>
                     <li> [x] Propose Changes</li>
-                    <li> [ ] Complete Core</li>
+                    <li> [x] Complete Core</li>
                 </ul>
             </td>
             <td>12/06</td>
