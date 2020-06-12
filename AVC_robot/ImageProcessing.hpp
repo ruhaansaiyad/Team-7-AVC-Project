@@ -1,40 +1,11 @@
 class ImageProcessing{
 	public:
-		int getLineIndex(ImagePPM image);
-		int containsBlack(ImagePPM image);
-	private:
 		int* getCenterRow(ImagePPM image);
+	private:
 		int getColor(ImagePPM image, int row, int col);
 		int isWhite(ImagePPM image, int row, int col);
-		int isRed(ImagePPM image, int row, int col);
-		int isBlack(ImagePPM image, int row, int col);
+		//int isRed(ImagePPM image, int row, int col);
 };
-
-/**
- * returns the center of the line
- */
-int ImageProcessing::getLineIndex(ImagePPM image){
-	int* row = getCenterRow(image);
-	// look at each row and check for 1s
-	int total = 0;		// stores the total of all index
-	int pixels = 0;		// stores white pixels
-	
-	// loops the row
-	for(int i = 0; i < image.width; i++){
-		if(row[i]){
-			// white pixel
-			total += i;
-			pixels++;
-		}
-	}
-	
-	// gets average index of the white pixels
-	if(pixels == 0){
-		return -1;
-	}
-	return (total/pixels);
-}
-
 
 /**
  * returns a summary of the center row
@@ -54,7 +25,6 @@ int* ImageProcessing::getCenterRow(ImagePPM image){
  * returns a number for colour of the pixel
  * 0-not any of the following colours
  * 1-white
- * 2-black
  */
 int ImageProcessing::getColor(ImagePPM image, int row, int col){
 	if(isWhite(image, row, col)){
@@ -69,6 +39,6 @@ int ImageProcessing::getColor(ImagePPM image, int row, int col){
  */
 int ImageProcessing::isWhite(ImagePPM image, int row, int col){
 	// check white by looking at the luminocity
-	int lumin = get_pixel(image, row, col, 1);
+	int lumin = get_pixel(image, row, col, 3);
 	return (int)(lumin > 240);
 }
