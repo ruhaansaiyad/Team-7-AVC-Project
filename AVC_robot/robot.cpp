@@ -12,6 +12,7 @@ class Robot{
 		double BASE_SPEED;
 		float getError(ImagePPM image);
 		void move(float error);
+		void adjust(int exit);
 };
 
 /**
@@ -56,9 +57,13 @@ float Robot::getError(ImagePPM image){
 		// calculate the error from the center
 		error = (i-(image.width/2))*s;
 		// add to the total current error 
-		currentError = (currentError + error);		
+		currentError += error;		
 	} 
-	return currentError/numWhite;
+	// check for NaN
+	if(numWhite != 0){
+		return currentError/numWhite;
+	}
+	return -1;
 }
 
 /**
@@ -74,6 +79,30 @@ void Robot::move(float error){
 		
 	setMotors(left,right);
 }
+
+/**
+ * adjust to corners
+ */
+void Robot::adjust(int exit){
+	// respond to different exits and make adjustments
+	switch(exit){
+		case 0:
+			// left
+			setMotors(0,BASE_SPEED);
+			break;
+		case 1:
+			// middle, do nothing and leave for PID
+			break;
+		case 2:
+			// right
+			setMotors(BASE_SPEED,0);
+			break;
+		default:
+			// deadend, 180
+			setMotors(-320,320);
+			break;
+	}
+}
   
 /** 
  * starts the robot and main loop
@@ -86,7 +115,17 @@ int Robot::start(){
     // loops forever and check path
     while(1){
 		takePicture();
+		
+		// finds exit
+		int exit = imgProcess.getExit(cameraView);
+		adjust(exit);
+		
+		// move according to error
 		float error = getError(cameraView);
+		// checks the error
+		if(error == -1){
+			error = exit-1*cameraView.width;
+		}
 		move(error);
 	} 
 }
