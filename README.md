@@ -97,7 +97,8 @@ Github
                     <li> [x] Begin work on completion</li>
                     <li> [x] Begin testing and debugging completion</li>
                     <li> [ ] Complete completion</li>
-                    <li> [ ] Do challenge if time allows</li>
+                    <li> [x] Begin Challenge</li>
+                    <li> [ ] Testing challenge</li>
                 </ul>
             </td>
             <td>19/06</td>
