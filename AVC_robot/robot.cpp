@@ -117,11 +117,11 @@ int Robot::followLine(int exit, ImagePPM image){
 	adjust(exit);
 	
 	// get error 
-	int error = getError(image, image.width/2, 1); 
+	int error = getError(image, image.width/2, 1);
 	// check for error
 	if(error > image.width || error < -image.width){
 		// moves the maximum to left or right
-		return exit-1*cameraView.width;
+		return cameraView.width/2;
 	}	
 	return error;
 }
@@ -151,8 +151,6 @@ int Robot::followWall(ImagePPM image, int targetDist){
 			error = 0;
 		}
 	}
-	
-	std::cout<<error<<std::endl;
 	
 	return error;
 }
