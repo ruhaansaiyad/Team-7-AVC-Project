@@ -95,7 +95,7 @@ Github
                     <li> [x] Determine how the core code will be modified</li>
                     <li> [ ] Allot tasks</li>
                     <li> [x] Begin work on completion</li>
-                    <li> [ ] Begin testing and debugging completion</li>
+                    <li> [x] Begin testing and debugging completion</li>
                     <li> [ ] Complete completion</li>
                     <li> [ ] Do challenge if time allows</li>
                 </ul>
