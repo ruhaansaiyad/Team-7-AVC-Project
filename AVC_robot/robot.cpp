@@ -1,5 +1,6 @@
 #include "robot.hpp"
 #include "ImageProcessing.hpp"
+#include <cmath>
 
 class Robot{
 	public:
@@ -60,10 +61,7 @@ float Robot::getError(ImagePPM image){
 		currentError += error;		
 	} 
 	// check for NaN
-	if(numWhite != 0){
-		return currentError/numWhite;
-	}
-	return -1;
+	return currentError/numWhite;
 }
 
 /**
@@ -98,8 +96,8 @@ void Robot::adjust(int exit){
 			setMotors(BASE_SPEED,0);
 			break;
 		default:
-			// deadend, 180
-			setMotors(-320,320);
+			// deadend, turn right
+			setMotors(50,-20);
 			break;
 	}
 }
@@ -123,8 +121,8 @@ int Robot::start(){
 		// move according to error
 		float error = getError(cameraView);
 		// checks the error
-		if(error == -1){
-			error = exit-1*cameraView.width;
+		if(std::isnan(error)){
+			error = cameraView.width/2;
 		}
 		move(error);
 	} 
