@@ -130,6 +130,7 @@ Github
 - Compile server3.cpp and robot.cpp using the included makefiles.
 - Run the compiled server3 file
 - Run the compiled robot file
+- To change the server map between core, completeion and challenge, change the first line of config.txt to   "mazeFile,[level name].txt".
 ## Mac: 
 - Install Homebrew by opening Terminal (Command+Space type Terminal) and typing the following:       
 ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"``` 
