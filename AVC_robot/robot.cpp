@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 #include "robot.hpp"
 #include "ImageProcessing.hpp"
 #include <cmath>
