@@ -137,3 +137,6 @@ Github
 - Compile server3.cpp and robot.cpp using the included makefiles.
 - Run the compiled server3 file
 - Run the compiled robot file
+
+## Note:
+- Camera position has been adjusted to be closer to the robot in config.txt file in AVC_server folder (from 100 to 50).
