@@ -114,6 +114,14 @@ Github
 
 ## Install Guide
 
+## Instructions for installation specific for Windows 10 (Unfinished):
+
+1. From https://www.sfml-dev.org/download/sfml/2.5.1/, download the correct SFML library and MingGW builds corresponding to your Operating System version if you haven’t already and extract to folder in directory (C:). 
+- For 64-bits systems: download ‘MinGW Builds 7.3.0 (64-bit)’ and ‘GCC 7.3.0 MinGW (SEH) - 64-bit’.
+- For 32-bits systems: download ‘MinGW Builds 7.3.0 (32-bit)’ and ‘GCC 7.3.0 MinGW (DW2) - 32-bit’.
+2. To set up MinGW, in the Windows search bar, enter ‘Edit the system environment variables’ and click it. In the ‘Advanced’ tab, click ‘Environment Variables’, select the ‘Path’ variable and click ‘Edit’. Click ‘New’ and copy the directory address of the folder stored in (C:) or type ‘C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0’ and press ‘OK’.
+
+
 ## Windows:
 - Download SFML version GCC 7.3.0 MinGW (SEH) - 64-bit found [here](https://www.sfml-dev.org/download/sfml/2.5.1/)  
 - Extract the files to C:/SFML
@@ -139,3 +147,4 @@ Github
 - Compile server3.cpp and robot.cpp using the included makefiles.
 - Run the compiled server3 file
 - Run the compiled robot file
+
