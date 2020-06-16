@@ -139,4 +139,4 @@ Github
 - Run the compiled robot file
 
 ## Note:
-- Camera position has been adjusted to be closer to the robot in config.txt file in AVC_server folder (from 100 to 50).
+- Camera position has been adjusted to be closer to the robot in config.txt file in AVC_server folder (robot.cameraForward from 100 to 50).
