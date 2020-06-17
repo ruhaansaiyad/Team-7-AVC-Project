@@ -1,11 +1,44 @@
 class ImageProcessing{
 	public:
 		int* getCenterRow(ImagePPM image);
+		int getExit(ImagePPM image);
 	private:
 		int getColor(ImagePPM image, int row, int col);
 		int isWhite(ImagePPM image, int row, int col);
 		//int isRed(ImagePPM image, int row, int col);
 };
+
+/**
+ * returns the edge of the frame
+ * -1 - none
+ * 0 - left
+ * 1 - top
+ * 2 - right
+ */
+int ImageProcessing::getExit(ImagePPM image){	
+	// look at left edge, bottom to top
+	for(int i = image.height-1; i >= 0; i--){
+		if(getColor(image, i, 0) == 1){
+			return 0; 
+		}
+	}
+	
+	// looks at top edge, left to right
+	for(int i = 0; i < image.width; i++){
+		if(getColor(image, 0, i) == 1){
+			return 1;
+		}
+	}
+	
+	// look at right edge, top to bottom
+	for(int i = 0; i < image.height; i++){
+		if(getColor(image, i, image.height-1) == 1){
+			return 2;
+		}
+	}
+	
+	return -1;
+}
 
 /**
  * returns a summary of the center row
