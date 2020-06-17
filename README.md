@@ -93,7 +93,7 @@ Github
                 <ul>
                     <li> [x] Begin abstracting for completion</li>
                     <li> [x] Determine how the core code will be modified</li>
-                    <li> [ ] Allot tasks</li>
+                    <li> [x] Allot tasks</li>
                     <li> [x] Begin work on completion</li>
                     <li> [x] Begin testing and debugging completion</li>
                     <li> [ ] Complete completion</li>
