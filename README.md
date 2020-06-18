@@ -137,6 +137,8 @@ Github
 - Open the makefile folder and open the folder with the Operating System of your computer
 - Cut or Copy the ```<os>_robot_makefile``` file into the AVC_robot folder and rename to ```makefile```
 - Cut or Copy the ```<os>_server_makefile``` file into the AVC_server folder and rename to ```makefile```
+- If you are using the Linux Operating System
+    - Replace ```/home/arthur/Downloads/SFML/SFML-2.5.1``` with the file location of the SFML folder
 
 ## Compiling and running the program
 - Open the AVC_server folder and shift right click and select ``Open command window here````
