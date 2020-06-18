@@ -113,6 +113,13 @@ Github
 </table>
 
 ## Install Guide
+
+### General features
+- In every version, there will be two files contained within the zip. One called AVC_server, and AVC_robot. 
+- The robot program is responsible for creating the robot, and the server program for hosting it. Hence, the server must be run before the robot.
+- Before the initial use, the files for both parts of the program must be made into execuables. This is done through an included makefile which is explained below.
+- The correct version of MinGW relative to the OS must be installed or else the compilation/make will fail.
+
 ### Windows:
 
 - Download and install MinGW compiler version 7.3.0 (64-bit) found [here](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.3.0/threads-posix/seh/x86_64-7.3.0-release-posix-seh-rt_v5-rev0.7z/download)
