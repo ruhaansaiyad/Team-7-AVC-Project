@@ -98,7 +98,7 @@ Github
                     <li> [x] Begin testing and debugging completion</li>
                     <li> [x] Complete completion</li>
                     <li> [x] Begin Challenge</li>
-                    <li> [ ] Testing challenge</li>
+                    <li> [x] Testing challenge</li>
                 </ul>
             </td>
             <td>19/06</td>
