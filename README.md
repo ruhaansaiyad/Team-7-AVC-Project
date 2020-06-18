@@ -114,18 +114,17 @@ Github
 
 ## Install Guide
 
-### Instructions for installation specific for Windows 10 (Unfinished):
+### Installing MinGW for Windows
 
-1. From https://www.sfml-dev.org/download/sfml/2.5.1/, download the correct SFML library and MingGW builds corresponding to your Operating System version if you haven’t already and extract to folder in directory (C:). 
-- For 64-bits systems: download ‘MinGW Builds 7.3.0 (64-bit)’ and ‘GCC 7.3.0 MinGW (SEH) - 64-bit’.
-- For 32-bits systems: download ‘MinGW Builds 7.3.0 (32-bit)’ and ‘GCC 7.3.0 MinGW (DW2) - 32-bit’.
-2. To set up MinGW, in the Windows search bar, enter ‘Edit the system environment variables’ and click it. In the ‘Advanced’ tab, click ‘Environment Variables’, select the ‘Path’ variable and click ‘Edit’. Click ‘New’ and copy the directory address of the folder stored in (C:) or type ‘C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0’ and press ‘OK’.
-
-
-### Windows:
-- Download SFML version GCC 7.3.0 MinGW (SEH) - 64-bit found [here](https://www.sfml-dev.org/download/sfml/2.5.1/)  
-- Extract the files to C:/SFML
 - Download and install MinGW compiler version 7.3.0 (64-bit) found [here](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.3.0/threads-posix/seh/x86_64-7.3.0-release-posix-seh-rt_v5-rev0.7z/download)
+- To set up MinGW, in the Windows search bar, enter ‘Edit the system environment variables’ and click it. In the ‘Advanced’ tab, click ‘Environment Variables’, select the ‘Path’ variable and click ‘Edit’. Click ‘New’ and copy the directory address of the MinGW folder.
+
+- From https://www.sfml-dev.org/download/sfml/2.5.1/, download the correct SFML library and MingGW builds corresponding to your Operating System version if you haven’t already and extract to folder in directory (C:). 
+    - For 64-bits systems: download ‘MinGW Builds 7.3.0 (64-bit)’ and ‘GCC 7.3.0 MinGW (SEH) - 64-bit’.
+    - For 32-bits systems: download ‘MinGW Builds 7.3.0 (32-bit)’ and ‘GCC 7.3.0 MinGW (DW2) - 32-bit’.
+
+- Extract the files to C:/SFML
+
 - Download and extract the repository files found [here](https://github.com/ruhaansaiyad/Team-7-AVC-Project/archive/master.zip)
 - Copy the dll files from the C:/SFML/bin folder to the same folder as the exe
 ### Linux: 
