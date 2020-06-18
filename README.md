@@ -119,6 +119,7 @@ Github
 - The robot program is responsible for creating the robot, and the server program for hosting it. Hence, the server must be run before the robot.
 - Before the initial use, the files for both parts of the program must be made into execuables. This is done through an included makefile which is explained below.
 - The correct version of MinGW relative to the OS must be installed or else the compilation/make will fail.
+- To change the stage, edit the config.txt file and in the first line there will be a 'core.txt'. Change it to 'completion.txt' or 'challenge.txt' for other levels. This does not require recompiling.
 
 ### Windows:
 
@@ -132,14 +133,14 @@ Github
 - Copy the dll files from the C:/SFML/bin folder to the same folder as the exe
 ### Linux: 
 - Download SFML version Linux GCC - 64-bit found [here](https://www.sfml-dev.org/download/sfml/2.5.1/)  
-- Extract the files
+- Extract the files to a place with an easily referenced path.
 - Download and extract the repository files found [here](https://github.com/ruhaansaiyad/Team-7-AVC-Project/archive/master.zip)
+- Inside the server and robot folders, there will be a makefile. Open this file and change the path of the first line to that of the SFML you just downloaded and unzipped. 
 ### Mac: 
 - Install Homebrew by opening Terminal (Command+Space type Terminal) and typing the following:       
 ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"``` 
 - Install SFML by typing ```brew install sfml``` in Terminal 
 - Download and extract the repository files found [here](https://github.com/ruhaansaiyad/Team-7-AVC-Project/archive/master.zip)
-
 ## Using the makefiles
 - Open the makefile folder and open the folder with the Operating System of your computer
 - Cut or Copy the ```<os>_robot_makefile``` file into the AVC_robot folder and rename to ```makefile```
