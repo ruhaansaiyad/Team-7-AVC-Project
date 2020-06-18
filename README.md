@@ -114,7 +114,7 @@ Github
 
 ## Install Guide
 
-## Instructions for installation specific for Windows 10 (Unfinished):
+### Instructions for installation specific for Windows 10 (Unfinished):
 
 1. From https://www.sfml-dev.org/download/sfml/2.5.1/, download the correct SFML library and MingGW builds corresponding to your Operating System version if you haven’t already and extract to folder in directory (C:). 
 - For 64-bits systems: download ‘MinGW Builds 7.3.0 (64-bit)’ and ‘GCC 7.3.0 MinGW (SEH) - 64-bit’.
@@ -122,29 +122,27 @@ Github
 2. To set up MinGW, in the Windows search bar, enter ‘Edit the system environment variables’ and click it. In the ‘Advanced’ tab, click ‘Environment Variables’, select the ‘Path’ variable and click ‘Edit’. Click ‘New’ and copy the directory address of the folder stored in (C:) or type ‘C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0’ and press ‘OK’.
 
 
-## Windows:
+### Windows:
 - Download SFML version GCC 7.3.0 MinGW (SEH) - 64-bit found [here](https://www.sfml-dev.org/download/sfml/2.5.1/)  
 - Extract the files to C:/SFML
 - Download and install MinGW compiler version 7.3.0 (64-bit) found [here](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.3.0/threads-posix/seh/x86_64-7.3.0-release-posix-seh-rt_v5-rev0.7z/download)
 - Download and extract the repository files found [here](https://github.com/ruhaansaiyad/Team-7-AVC-Project/archive/master.zip)
-- Compile server3.cpp and robot.cpp using the included makefiles.
-- Copy the dll files from the SFML/bin folder to the same folder as the exe
-- Run the compiled server3.exe file
-- Run the compiled robot.exe file
-## Linux: 
+- Copy the dll files from the C:/SFML/bin folder to the same folder as the exe
+### Linux: 
 - Download SFML version Linux GCC - 64-bit found [here](https://www.sfml-dev.org/download/sfml/2.5.1/)  
 - Extract the files
 - Download and extract the repository files found [here](https://github.com/ruhaansaiyad/Team-7-AVC-Project/archive/master.zip)
-- Compile server3.cpp and robot.cpp using the included makefiles.
-- Run the compiled server3 file
-- Run the compiled robot file
-- To change the server map between core, completeion and challenge, change the first line of config.txt to   "mazeFile,[level name].txt".
-## Mac: 
+### Mac: 
 - Install Homebrew by opening Terminal (Command+Space type Terminal) and typing the following:       
 ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"``` 
 - Install SFML by typing ```brew install sfml``` in Terminal 
 - Download and extract the repository files found [here](https://github.com/ruhaansaiyad/Team-7-AVC-Project/archive/master.zip)
-- Compile server3.cpp and robot.cpp using the included makefiles.
-- Run the compiled server3 file
-- Run the compiled robot file
 
+## Using the makefiles
+- Open the makefile folder and open the folder with the Operating System of your computer
+- Cut or Copy the ```<os>_robot_makefile``` file into the AVC_robot folder and rename to ```makefile```
+- Cut or Copy the ```<os>_server_makefile``` file into the AVC_server folder and rename to ```makefile```
+
+## Compiling the program
+- Open the bat file of the operating system on the computer and if the installation was done correctly, the server should open and the robot should begin to move
+- To open the run the program again, open server.exe in the AVC_server folder and the robot.exe in the AVC_robot folder.
