@@ -113,18 +113,14 @@ Github
 </table>
 
 ## Install Guide
-
-### Installing MinGW for Windows
+### Windows:
 
 - Download and install MinGW compiler version 7.3.0 (64-bit) found [here](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.3.0/threads-posix/seh/x86_64-7.3.0-release-posix-seh-rt_v5-rev0.7z/download)
 - To set up MinGW, in the Windows search bar, enter ‘Edit the system environment variables’ and click it. In the ‘Advanced’ tab, click ‘Environment Variables’, select the ‘Path’ variable and click ‘Edit’. Click ‘New’ and copy the directory address of the MinGW folder.
-
 - From https://www.sfml-dev.org/download/sfml/2.5.1/, download the correct SFML library and MingGW builds corresponding to your Operating System version if you haven’t already and extract to folder in directory (C:). 
     - For 64-bits systems: download ‘MinGW Builds 7.3.0 (64-bit)’ and ‘GCC 7.3.0 MinGW (SEH) - 64-bit’.
     - For 32-bits systems: download ‘MinGW Builds 7.3.0 (32-bit)’ and ‘GCC 7.3.0 MinGW (DW2) - 32-bit’.
-
 - Extract the files to C:/SFML
-
 - Download and extract the repository files found [here](https://github.com/ruhaansaiyad/Team-7-AVC-Project/archive/master.zip)
 - Copy the dll files from the C:/SFML/bin folder to the same folder as the exe
 ### Linux: 
@@ -143,6 +139,10 @@ Github
 - Cut or Copy the ```<os>_server_makefile``` file into the AVC_server folder and rename to ```makefile```
 
 ## Compiling and running the program
-- Open the server.cpp in AVC_server in Geany and open the ```Build tab``` and click ```Make```
-- Repeat for robot.cpp in AVC_robot
+- Open the AVC_server folder and shift right click and select ``Open command window here````
+- In the command window make the file by entering the command below.
+    - Type ```mingw32-make``` for Windows if MinGW is installed
+    - Else type ```make``` for Linux and Mac Devices
+- The ```server.exe``` file should appear in the folder
+- Repeat for the AVC_robot folder to get the ```robot.exe``` file
 - To open the run the program, open server.exe in the AVC_server folder and the robot.exe in the AVC_robot folder.
