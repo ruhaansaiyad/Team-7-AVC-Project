@@ -143,6 +143,7 @@ Github
 - Cut or Copy the ```<os>_robot_makefile``` file into the AVC_robot folder and rename to ```makefile```
 - Cut or Copy the ```<os>_server_makefile``` file into the AVC_server folder and rename to ```makefile```
 
-## Compiling the program
-- Open the bat file of the operating system on the computer and if the installation was done correctly, the server should open and the robot should begin to move
-- To open the run the program again, open server.exe in the AVC_server folder and the robot.exe in the AVC_robot folder.
+## Compiling and running the program
+- Open the server.cpp in AVC_server in Geany and open the ```Build tab``` and click ```Make```
+- Repeat for robot.cpp in AVC_robot
+- To open the run the program, open server.exe in the AVC_server folder and the robot.exe in the AVC_robot folder.
